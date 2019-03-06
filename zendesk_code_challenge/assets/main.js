@@ -21,8 +21,8 @@ function showPOTD(data) {
   }
 }
 
-function showError() {
-
+function showError(response) {
+  $(".potd-thumb").html(response);
 }
 
 function contactNASA(date, client) {
@@ -56,8 +56,5 @@ function openHDModal(client) {
   }
 }).then(function(modalContext) {
   var modalClient = client.instance(modalContext['instances.create'][0].instanceGuid);
-  modalClient.on('modal.close', function() {
-
-  });
 });
 }

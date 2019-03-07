@@ -3,6 +3,7 @@ $(function() {
   var date;
   client.invoke('resize', { width: '100%', height: '300px' });
 
+  // load today's image by default
   if (client) {
     contactNASA(client).then(
       function([thumbImg, hdImg]) {
@@ -16,7 +17,7 @@ $(function() {
     date = $("#potd-date").val();
     contactNASA(client, date).then(
       function([thumbImg, hdImg]) {
-        $(".potd-thumb").html(result);
+        $(".potd-thumb").html(thumbImg);
         $(".potd-thumb").data("hd", hdImg);
       }
     );

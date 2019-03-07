@@ -10,7 +10,7 @@
   "location": {
     "support": {
       "ticket_sidebar": "assets/iframe.html",
-      "user_sidebar": "assets/iframe.html"
+      "nav_bar": "assets/iframe_full.html"
     }
   },
   "version": "1.0",

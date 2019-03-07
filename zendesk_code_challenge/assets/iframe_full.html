@@ -10,9 +10,15 @@
   <script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="main.js"></script>
-  <div class="container">
-    <label for="potd">Which day's NASA photo would you like to see?</label>
-    <input type="date" id="potd-date" name="nasa-date">
+  <script type="text/javascript" src="gallery.js"></script>
+  <div class="container full">
+    <label for="potd">View the Astronomy Photo of the Day from NASA!</label><br />
+    <div class="description">Choose the date you'd like to see or view some of our favorites!</div>
+    <input type="date" id="potd-date" class="zd-searchmenu-base" name="nasa-date">
+    <div class="gallery">
+
+    </div>
+    <div class="body-text">Today's Image or Your Selected Image</div>
     <div class="potd-thumb"></div>
   </div>
 </body>

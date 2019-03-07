@@ -1,3 +1,4 @@
+/* universal styles */
 .container {
   text-align: center;
   margin: 0 auto;
@@ -8,4 +9,40 @@ input {
   color: #49545C;
   border-radius: 4px;
   margin: 5px;
+}
+
+.body-text {
+  color: #000;
+  font-size: 1.2em;
+  margin: 2em 0 0 0;
+}
+
+/* full page agent app styles */
+.container.full {
+  height: 200px;
+  color: #fff;
+  background:
+    linear-gradient(rgba(0, 0, 140, 0.45), rgba(255, 255, 255, 1)),
+    url('/img/star-background.jpg');
+  background-repeat: none;
+  background-position: top center;
+  padding: 1em 0 0 0;
+}
+
+.full label {
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.full description {
+  font-size: 1.2em;
+  margin: 1em 0 0.5em 0;
+}
+
+.full gallery {
+  margin: 0 auto;
+}
+
+.full gallery img {
+  float: left;
 }
